@@ -4,16 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Señuelos J.O. - Pesca Deportiva</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        
+        /* Encabezado Principal */
+        header {
+            background: linear-gradient(rgba(2, 48, 71, 0.85), rgba(2, 48, 71, 0.95)), url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #ffb703;
+            font-weight: bold;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Sección de Introducción */
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .intro h2 {
+            color: #023047;
+            margin-top: 0;
+        }
+
+        /* Galería de Catálogo */
+        .catalogo-titulo {
+            color: #023047;
+            border-left: 5px solid #219ebc;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .productos-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+            border: 1px solid #e2e8f0;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #eaeaea;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-body h3 {
+            margin: 0 0 10px 0;
+            color: #023047;
+            font-size: 1.3em;
+        }
+
+        .card-body p {
+            margin: 0 0 15px 0;
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+
+        .tag-artesanal {
+            display: inline-block;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Sección de Contacto e Envíos */
+        .info-extras {
+            background: #023047;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .info-extras h2 {
+            color: #ffb703;
+            margin-top: 0;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-weight: bold;
+            border-radius: 25px;
+            margin-top: 15px;
+            font-size: 1.1em;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>Señuelos J.O.</h1>
-        <p>Señuelos artesanales para pesca deportiva. Envíos a todo el país desde Corrientes, Argentina.</p>
+        <p>Señuelos Artesanales para Pesca Deportiva</p>
     </header>
-    
-    <main>
-        <h2>Bienvenidos a nuestro sitio oficial</h2>
-        <p>Próximamente vas a poder ver nuestro catálogo completo acá.</p>
-    </main>
+
+    <div class="container">
+        
+        <section class="intro">
+            <h2>Pasión por la Pesca Deportiva</h2>
+            <p>Fabricamos piezas únicas de alta efectividad, realizadas a pedido, testeadas y equilibradas para garantizar la mejor experiencia en el agua. Envíos a todo el país desde Corrientes, Argentina.</p>
+        </section>
+
+        <h2 class="catalogo-titulo">Nuestros Modelos Destacados</h2>
+        
+        <div class="productos-container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=500&q=80" alt="Señuelo de superficie">
+                <div class="card-body">
+                    <span class="tag-artesanal">100% Artesanal</span>
+                    <h3>Señuelos de Superficie</h3>
+                    <p>Diseño aerodinámico ideal para grandes capturas. Movimiento natatorio realista irresistible para los depredadores de nuestros ríos.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517462964-21fdcec3f25b?auto=format&fit=crop&w=500&q=80" alt="Señuelo de Media Agua">
+                <div class="card-body">
+                    <span class="tag-artesanal">Alta Calidad</span>
+                    <h3>Modelos de Media Agua</h3>
+                    <p>Pintura detallada de alta resistencia y ganchos reforzados. Perfectos para dorados, tarariras y surubíes.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="info-extras">
+            <h2>¿Cómo hacer tu pedido?</h2>
+            <p>Se realizan a pedido y personalizados según la especie o zona donde busques pescar.</p>
+            <p><strong>Envíos confiables a todo el país.</strong></p>
+            <a href="https://wa.me/5493794000000" target="_blank" class="btn-whatsapp">Consultar por WhatsApp</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Señuelos J.O. - Corrientes, Argentina. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
